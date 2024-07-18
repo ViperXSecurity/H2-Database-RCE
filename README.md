@@ -2,10 +2,12 @@
 H2 Database (1.0 ~ 2.3.230) - Remote Code Execution
 
 H2 Database RCE - ViperX Offensive Security
-  Date: 17/07/2024
+
+Date: 17/07/2024
 
 The exploit flow operates with the following logic: 
-~ for versions <(1.4) we create a 'dummy' table, and write the output log into a C:\Windows\Tasks\svchost.bat file by using ```
+~ for versions <(1.4) we create a 'dummy' table, and write the output log into a ```
+C:\Windows\Tasks\svchost.bat``` file by using ```
 SCRIPT SIMPLE NODATA NOSETTINGS TO '{BAT_FULLPATH}'```
 
   
